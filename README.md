@@ -12,6 +12,7 @@ Built with HTML + CSS, responsive for PC & Mobile.
 ## Links
 - [Invite Bot](https://discord.com/oauth2/authorize?client_id=1373687706894204948&permissions=1494917122102&integration_type=0&scope=bot+applications.commands)
 - [Support Server](https://discord.gg/3xEVhbymk4)
+- [Page URL](https://iamprmgvyt.github.io/AllInOneWeb/)
 
 ## License
 MIT License
