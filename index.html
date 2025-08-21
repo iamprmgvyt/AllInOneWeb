@@ -1,118 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>All In 🌎ne - Discord Bot</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All In One Bot</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <img src="bot avatar.jpg" alt="Bot Avatar" class="bot-avatar">
-      <h1>All In 🌎ne</h1>
-      <p>Your multifunctional Discord Bot with 50+ commands!</p>
-      <div class="buttons">
-        <a href="https://discord.com/oauth2/authorize?client_id=1373687706894204948&permissions=1494917122102&integration_type=0&scope=bot+applications.commands" class="btn">Invite Bot</a>
-        <a href="https://discord.gg/3xEVhbymk4" class="btn btn-alt">Support Server</a>
-      </div>
-    </div>
+  <header>
+    <h1>🤖 All In One Bot</h1>
+    <p>The multipurpose Discord bot with games, economy, moderation, and more.</p>
   </header>
 
-  <!-- About Section -->
-  <section class="about">
-    <h2>About</h2>
-    <p>All In 🌎ne is a powerful Discord bot that combines moderation, fun, utility, and economy features into one easy-to-use bot. With over 52 active commands, it can handle anything from server management to entertainment.</p>
-  </section>
-
-  <!-- Active Commands Section -->
-  <section class="commands">
-    <h2>Active Commands</h2>
-    <div class="command-list">
-      <span>/active</span>
-      <span>/afk</span>
-      <span>/announce</span>
-      <span>/avatar</span>
-      <span>/balance</span>
-      <span>/ban</span>
-      <span>/botcode</span>
-      <span>/botinfo</span>
-      <span>/buy</span>
-      <span>/cat</span>
-      <span>/changelog</span>
-      <span>/claimticket</span>
-      <span>/clear</span>
-      <span>/close</span>
-      <span>/coinflip</span>
-      <span>/crime</span>
-      <span>/daily</span>
-      <span>/dashboard</span>
-      <span>/deposit</span>
-      <span>/dog</span>
-      <span>/game</span>
-      <span>/give</span>
-      <span>/help</span>
-      <span>/inactive</span>
-      <span>/inventory</span>
-      <span>/invite</span>
-      <span>/kick</span>
-      <span>/leaderboard</span>
-      <span>/lock</span>
-      <span>/managecategory</span>
-      <span>/managechannel</span>
-      <span>/managerole</span>
-      <span>/meme</span>
-      <span>/mute</span>
-      <span>/ping</span>
-      <span>/pingrole</span>
-      <span>/previews</span>
-      <span>/remind</span>
-      <span>/remove-warn</span>
-      <span>/rob</span>
-      <span>/role</span>
-      <span>/roleinfo</span>
-      <span>/roll</span>
-      <span>/say</span>
-      <span>/search</span>
-      <span>/serverinfo</span>
-      <span>/shop</span>
-      <span>/ticket</span>
-      <span>/unban</span>
-      <span>/unlock</span>
-      <span>/unmute</span>
-      <span>/uptime</span>
-      <span>/userinfo</span>
-      <span>/version</span>
-      <span>/warn</span>
-      <span>/warns</span>
-      <span>/withdraw</span>
-      <span>/work</span>
-      <span>/xp</span>
+  <main>
+    <div class="buttons">
+      <a href="#" onclick="openModal()" class="btn btn-download">⬇️ Download Bot Code</a>
+      <a href="https://github.com/iamprmgvyt/All-In-One" class="btn btn-install" target="_blank">⚡ Install Bot Code</a>
     </div>
-  </section>
+  </main>
 
-  <!-- Bot Owner Profile -->
-  <section class="owner">
-    <h2>Bot Owner</h2>
-    <div class="owner-profile">
-      <img src="profile.jpg" alt="Owner Avatar" class="owner-avatar">
-      <div>
-        <h3>PRMGV</h3>
-        <p>Creator and developer of All In 🌎ne bot. Passionate about coding, Discord communities, and building powerful tools for servers worldwide.</p>
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2>⚠️ Warning</h2>
+      <p>If you modify this file without permission, we are not responsible for any related issues.</p>
+      <div class="modal-actions">
+        <button class="btn btn-cancel" onclick="closeModal()">Cancel</button>
+        <button class="btn btn-continue" onclick="downloadBotCode()">Continue</button>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 All In 🌎ne. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="tos.html">Terms of Service</a> | 
-      <a href="privacy.html">Privacy Policy</a>
-    </div>
-  </footer>
+  <script>
+    function openModal() {
+      document.getElementById("modal").style.display = "flex";
+    }
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+    function downloadBotCode() {
+      closeModal();
+      window.location.href = "https://github.com/iamprmgvyt/All-In-One/archive/refs/heads/main.zip";
+    }
+    window.onclick = function(event) {
+      const modal = document.getElementById("modal");
+      if (event.target === modal) {
+        closeModal();
+      }
+    }
+  </script>
 </body>
 </html>
+
