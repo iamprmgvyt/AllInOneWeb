@@ -1,6 +1,6 @@
 # AIO Discord Bot Website
 
-This is the official landing page for the **AIO Discord Bot** (52 commands).  
+This is the official landing page for the **AIO Discord Bot** (50+ commands).  
 Built with HTML + CSS, responsive for PC & Mobile.
 
 ## Features
